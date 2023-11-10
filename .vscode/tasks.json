@@ -1,0 +1,44 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\chto2\\OneDrive\\Desktop\\libGDX2\\libGDXbuildEnvironmentlibGDX",
+			"script": "buildEnvironment",
+			"description": "Displays all buildscript dependencies declared in root project 'libGDX'.",
+			"group": "build",
+			"project": "libGDX",
+			"buildFile": "C:\\Users\\chto2\\OneDrive\\Desktop\\libGDX2\\libGDX\\build.gradle",
+			"rootProject": "libGDX",
+			"projectFolder": "c:\\Users\\chto2\\OneDrive\\Desktop\\libGDX2\\libGDX",
+			"workspaceFolder": "c:\\Users\\chto2\\OneDrive\\Desktop\\libGDX2\\libGDX",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: buildEnvironment"
+		},
+		{
+			"type": "gradle",
+			"id": "c:\\Users\\chto2\\OneDrive\\Desktop\\libGDX2\\libGDXrunlibGDX",
+			"script": "run",
+			"description": "",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"project": "libGDX",
+			"buildFile": "C:\\Users\\chto2\\OneDrive\\Desktop\\libGDX2\\libGDX\\build.gradle",
+			"rootProject": "libGDX",
+			"projectFolder": "c:\\Users\\chto2\\OneDrive\\Desktop\\libGDX2\\libGDX",
+			"workspaceFolder": "c:\\Users\\chto2\\OneDrive\\Desktop\\libGDX2\\libGDX",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: run"
+		}
+	]
+}
