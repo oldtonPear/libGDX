@@ -17,7 +17,8 @@ public class Demo extends ApplicationAdapter {
 	@Override
 	public void create () {
 		Parameters.setAspectRatio(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-		cam = new OrthographicCamera(4, 4 / Parameters.getAspectRatio());
+		cam = new OrthographicCamera(4, 4 * Parameters.getInverseAspectRatio());
+		cam.position.set(2f, 2f * Parameters.getInverseAspectRatio(), 0f);
 		batch = new SpriteBatch();
 		img = new Texture("badlogic.jpg");
 	}
@@ -27,7 +28,7 @@ public class Demo extends ApplicationAdapter {
 		ScreenUtils.clear(1, 0, 0, 1);
 
 		cam.update();
-		batch.setProjectionMatrix(cam.projection);
+		batch.setProjectionMatrix(cam.combined);
 		batch.begin();
 		batch.draw(img, 0, 0, 1, 1);
 		batch.end();
