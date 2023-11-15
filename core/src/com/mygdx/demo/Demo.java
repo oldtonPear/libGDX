@@ -13,6 +13,7 @@ public class Demo extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
 	Camera cam;
+	float x;
 	
 	@Override
 	public void create () {
