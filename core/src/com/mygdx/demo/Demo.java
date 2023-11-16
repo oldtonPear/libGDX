@@ -13,7 +13,7 @@ public class Demo extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
 	Camera cam;
-	float x;
+	float imgx;
 	
 	@Override
 	public void create () {
@@ -31,8 +31,10 @@ public class Demo extends ApplicationAdapter {
 		cam.update();
 		batch.setProjectionMatrix(cam.combined);
 		batch.begin();
-		batch.draw(img, 0, 0, 1, 1);
+		batch.draw(img, imgx, 0, 1, 1);
 		batch.end();
+		imgx += 0.1;
+		if(imgx > 4) imgx=-1f;
 	}
 	
 	@Override
