@@ -9,7 +9,7 @@ public class Sprite {
     private float width;
     private float height;
     private Texture frame;
-    Sprite(Texture img){
+    public Sprite(Texture img){
         frame = img;
         x=0;
         y=0;
@@ -43,7 +43,7 @@ public class Sprite {
     public void setY(float y) {
         this.y = y;
     }
-    private void draw(SpriteBatch sb){
+    public void draw(SpriteBatch sb){
         sb.draw(frame, x, y, width, height);
     }
 
